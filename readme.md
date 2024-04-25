@@ -1,3 +1,28 @@
+
+![Badge](https://img.shields.io/static/v1?label=Python&message=3.9&color=<COLOR>)
+![Badge](https://img.shields.io/static/v1?label=Docker&message=26.0.0&color=<COLOR>)
+![Badge](https://img.shields.io/static/v1?label=Airflow&message=2.9.0&color=<COLOR>)
+# Estrutura do Repositório
+```
+.
+├── dags/
+│    ├── json_for_case.json/
+│    │   └── arquivo json para simular um input de dados
+|    |
+|    ├── json_to_postgres.py/
+│        └── Python file com toda a lógica da DAG implementada para desenpenhar a ingestão
+│    
+├── .gitignore 
+│ 
+├── airflow_up.sh (comandos bash necessários para configurar e executar os componentes do airflow)
+│ 
+├── docker-compose.yml (Compose docker para executar o banco postgres)
+│ 
+├── readme.md 
+│
+└── requirements.txt (dependencias)
+```
+
 # Capim code
 
 Nesse repositório encontra-se todo o ferramental necessário para executar um ambiente de airflow localmente e subir um banco postgres, além disso foi implementada uma DAG que fará a ingestão de um arquivo json para o banco postgres.
