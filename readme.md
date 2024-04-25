@@ -1,6 +1,6 @@
 # Capim code
 
-Nesse repositório encontra-se todo o ferramental necessário para executar um ambiente de airflow localmente e subir um banco postgres, além disso implementei uma DAG que fará a ingestão de um arquivo json para o banco postgres.
+Nesse repositório encontra-se todo o ferramental necessário para executar um ambiente de airflow localmente e subir um banco postgres, além disso foi implementada uma DAG que fará a ingestão de um arquivo json para o banco postgres.
 
 Para orquestrar esse pipeline escolhi o airflow pois é uma ferramenta open source e super tranquila de se implementar, além de oferecer várias features que facilitam o fluxo de trabalho para um engenheiro de dados. 
 
@@ -10,12 +10,12 @@ Para orquestrar esse pipeline escolhi o airflow pois é uma ferramenta open sour
 - Flexibilidade 
 - Reutilização e Modularidade
 
-Seria possível entregar um ambiente baseado em airflow em provedoras de cloud como por exemplo AWS ou GCP, com algum dos serviços para execução de containers disponibilizados. Ou até mesmo em um airflow totalemte gerenciado que é ofericido:
+Seria possível entregar um ambiente baseado em airflow em provedoras de cloud como por exemplo AWS ou GCP. É possível utilizar uma arquitera baseada em containers (self-hosted) ou até mesmo um airflow totalemte gerenciado como por exemplo:
 
 - Cloud Composer GCP (https://cloud.google.com/composer?hl=pt-BR)
 - Amazon Managed Workflows (https://aws.amazon.com/pt/managed-workflows-for-apache-airflow/)
 
-Nota: escolher os serviços totalmente gerenciados costuma ser mais caro, porém a sustentação e implementação da arquitetura se torna bem mais fácil. 
+Nota: escolher os serviços totalmente gerenciados costuma ser mais caro, porém a sustentação e implementação se tornam bem mais fáceis. 
 
 ## Setup (linux ou wsl)
 
